@@ -21,11 +21,14 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "cl-edupt"))))
+                ((:file "package")
+                 (:file "cl-edupt")
+                 (:file "constant")
+                 (:file "vec"))))
   :description "Common Lisp implementation of edupt"
   :long-description
   #.(with-open-file (stream (merge-pathnames
-                             #p"README.markdown"
+                             #p"README.md"
                              (or *load-pathname* *compile-file-pathname*))
                             :if-does-not-exist nil
                             :direction :input)
