@@ -24,7 +24,8 @@
                 ((:file "package")
                  (:file "cl-edupt")
                  (:file "constant")
-                 (:file "vec"))))
+                 (:file "vec")
+                 (:file "ppm"))))
   :description "Common Lisp implementation of edupt"
   :long-description
   #.(with-open-file (stream (merge-pathnames
