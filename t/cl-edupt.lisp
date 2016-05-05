@@ -49,5 +49,8 @@
            (is (cross b c) (vec3 -2 4 -2))
            ))
 
+(is-print
+ (save-ppm t (vector (vec3 1 1 1) (vec3 -1 0 -0.2) (vec3 2 1 1.5)) 3 1)
+ (format nil "P3~%3 1~%255~%255 255 255~%0 0 0~%255 255 255~%"))
 
 (finalize)

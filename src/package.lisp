@@ -11,4 +11,6 @@
            :vlen
            :dot
            :cross
-           :normalize!))
+           :normalize!
+
+           :save-ppm))
