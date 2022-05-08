@@ -1,4 +1,5 @@
-(in-package :cl-edupt)
+(defpackage :cl-edupt/vec3
+  (:use :cl))
 
 (defstruct (vec3
              (:conc-name v-)

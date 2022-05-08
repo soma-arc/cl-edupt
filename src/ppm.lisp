@@ -1,4 +1,5 @@
-(in-package :cl-edupt)
+(defpackage :cl-edupt/ppm
+  (:use :cl))
 
 (defun clamp (x)
   (cond ((< x 0) 0)

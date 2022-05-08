@@ -1,31 +1,10 @@
-#|
-  This file is a part of cl-edupt project.
-  Copyright (c) 2016 soma_arc
-|#
-
-#|
-  Common Lisp implementation of edupt
-
-  Author: soma_arc
-|#
-
-(in-package :cl-user)
-(defpackage cl-edupt-asd
-  (:use :cl :asdf))
-(in-package :cl-edupt-asd)
-
 (defsystem cl-edupt
   :version "0.1"
   :author "soma_arc"
   :license "MIT"
-  :depends-on ()
-  :components ((:module "src"
-                :components
-                ((:file "package")
-                 (:file "cl-edupt")
-                 (:file "constant")
-                 (:file "vec")
-                 (:file "ppm"))))
+  :pathname "src/"
+  :depends-on ("cl-edupt/cl-edupt")
+  :class :package-inferred-system
   :description "Common Lisp implementation of edupt"
   :long-description
   #.(with-open-file (stream (merge-pathnames
